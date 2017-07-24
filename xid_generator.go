@@ -6,7 +6,7 @@ import (
 )
 
 const (
-	X_ID_LENGHTH = 12
+	x_id_length = 12
 )
 
 var (
