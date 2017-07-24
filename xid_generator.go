@@ -13,10 +13,10 @@ var (
 	xIdChars = []rune("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
 )
 
-func GenerateXiD() string {
+func GenerateXiD(prefix string) string {
 	chars := make([]rune, x_id_length)
 	for char := range chars {
 		chars[char] = xIdChars[rand.Intn(len(xIdChars))]
 	}
-	return fmt.Sprintf("PUA-%s", string(chars))
+	return fmt.Sprintf("%s%s", prefix, string(chars))
 }
