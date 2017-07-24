@@ -13,7 +13,7 @@ var (
 	xIdChars = []rune("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
 )
 
-func generateXiD() string {
+func GenerateXiD() string {
 	chars := make([]rune, X_ID_LENGHTH)
 	for char := range chars {
 		chars[char] = xIdChars[rand.Intn(len(xIdChars))]
