@@ -14,7 +14,7 @@ var (
 )
 
 func GenerateXiD() string {
-	chars := make([]rune, X_ID_LENGHTH)
+	chars := make([]rune, x_id_length)
 	for char := range chars {
 		chars[char] = xIdChars[rand.Intn(len(xIdChars))]
 	}
